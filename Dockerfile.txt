@@ -1,0 +1,7 @@
+FROM ubuntu
+LABEL MAINTAINER shruthi
+RUN mkdir /copy
+ADD sample.sh /copy/sample.sh
+RUN chmod +x /copy/sample.sh
+ADD boot.sh /copy/boot.sh
+RUN chmod +x /copy/boot.sh
